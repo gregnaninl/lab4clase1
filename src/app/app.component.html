@@ -1,22 +1,18 @@
 
-<h1>{{title}}</h1>
-
-<br><br>
-
-<input type="number" [(ngModel)]="edad1">
-<br><br><br>
-<input type="number" [(ngModel)]="edad2">
-
-<br><br><br>
-<button class="md-button" mat-button color="primary" (click)=Calcular()>Calcular</button>
-<br><br>
-<button  class="md-button" mat-button color="primary" (click)=Limpiar()>Limpiar</button>
-
-<br><br><br>
-
-<input type="number" [(ngModel)]="suma">
-<br><br><br>
-<input type="number" [(ngModel)]="promedio">
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    
+    
+    <span>&nbsp; Laboratorio 4  </span>
+    &nbsp;
+    <div class="spacer"></div>
+      <a  routerLink="/clase1" title="Clase1">Clase1  &nbsp;</a>
+     
+      <a   routerLink="/bienvenido" title="Bienvenido">Bienvenido &nbsp;</a>
+      <a   routerLink="/login" title="Bienvenido">Login  &nbsp;</a>
+  </div>
+  
+  <div class="content" role="main">
 
 
 <router-outlet></router-outlet>

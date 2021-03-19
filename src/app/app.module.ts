@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BienvenidoComponent } from './pages/bienvenido/bienvenido.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { Clase1Component } from './pages/clase1/clase1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    Clase1Component
   ],
   imports: [
     BrowserModule,
