@@ -2,14 +2,14 @@
     <div class="col-md-6 mx-auto mt-5">
       <div class="card">
         <div class="card-body">
-          <h1 class="text-center">LOGIN</h1>
-          <form novalidate [formGroup]="loginForm" (ngSubmit)="onLogin()">
-            
+          <h1 class="text-center">REGISTRO</h1>
+          <form [formGroup]="registroForm" (ngSubmit)="onRegister()">
+           
             <div class="form-group" >              
               <label for="email">Correo</label>
               <input type="email" class="form-control" formControlName="email" [class]="isValidField('email')"/>
               <div class="invalid-feedback">
-                <span *ngIf="loginForm.controls.email.errors?.required">
+                <span *ngIf="registroForm.controls.email.errors?.required">
                   Ingresa tu email
                 </span>
               </div>          
@@ -19,30 +19,17 @@
               <label for="password">Contraseña</label>
               <input type="password" class="form-control" formControlName="password" [class]="isValidField('password')"/>
               <div class="invalid-feedback">
-                <span *ngIf="loginForm.controls.password.errors?.required">
+                <span *ngIf="registroForm.controls.password.errors?.required">
                   Ingresa tu contraseña
                 </span>
               </div>
             </div>
-
-            <button class="btn btn-primary btn-lg btn-block" >
-              Entrar
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              Registrar
             </button>
           </form>
-          <div (click)="onGoogleLogin()" class="form-group mt-3">
-            <button  class="btn btn-lg btn-google" >
-              Google
-            </button>
-          </div>
           <div class="form-group mt-3">
-            <p>
-              Crear Cuenta <a [routerLink] ="'/registro'"> Registrar </a>
-            </p>
-          </div>
-          <div class="form-group mt-3">
-            <p>
-              <a [routerLink]="'/contra'"> Olvidó la contraseña? </a>
-            </p>
+            <p>Ya tiene una cuenta crada?<a [routerLink]="['/login']"> Login </a></p>
           </div>
         </div>
       </div>

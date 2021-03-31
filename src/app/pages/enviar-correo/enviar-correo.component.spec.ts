@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Clase1Component } from './clase1.component';
+import { EnviarCorreoComponent } from './enviar-correo.component';
 
-describe('Clase1Component', () => {
-  let component: Clase1Component;
-  let fixture: ComponentFixture<Clase1Component>;
+describe('EnviarCorreoComponent', () => {
+  let component: EnviarCorreoComponent;
+  let fixture: ComponentFixture<EnviarCorreoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Clase1Component ]
+      declarations: [ EnviarCorreoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Clase1Component);
+    fixture = TestBed.createComponent(EnviarCorreoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
